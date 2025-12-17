@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BUMDES SanggaEmas - Unit</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/logo/logo_bumdes.png">
+    
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/lightcase.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+        /* === CONTAINER UTAMA === */
+        .collage-container {
+            display: grid;
+            width: 100%;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .collage-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background-color: #f0f0f0; /* Warna dasar jika gambar loading */
+        }
+        
+        .collage-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Tetap cover agar rapi, tapi wadahnya kita sesuaikan */
+            object-position: center; /* Fokus ke tengah gambar */
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .collage-item:hover img {
+            transform: scale(1.03);
+        }
+
+        /* === TAMPILAN DESKTOP (Layar Besar) === */
+        @media (min-width: 769px) {
+            .collage-container {
+                /* Layout: 2 Kolom (Kiri Besar, Kanan Kecil) */
+                grid-template-columns: 2fr 1fr;
+                
+                /* [PERUBAHAN] Tinggi dikurangi dari 250px ke 190px per baris.
+                   Total tinggi kiri: (190+190+15) = 395px.
+                   Ini lebih mendekati rasio 16:9 (Lanskap) agar tidak banyak terpotong. */
+                grid-template-rows: 190px 190px;
+            }
+
+            /* Gambar 1 (Utama): Kiri */
+            .collage-container > div:nth-child(1) {
+                grid-column: 1 / 2;
+                grid-row: 1 / 3;
+            }
+
+            /* Gambar 2: Kanan Atas */
+            .collage-container > div:nth-child(2) {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+
+            /* Gambar 3: Kanan Bawah */
+            .collage-container > div:nth-child(3) {
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+        }
+
+        /* === TAMPILAN MOBILE (Layar HP) === */
+        @media (max-width: 768px) {
+            .collage-container {
+                grid-template-columns: 1fr 1fr; /* 2 Kolom */
+                
+                /* [PERUBAHAN] Baris bawah dikurangi tingginya jadi 120px 
+                   agar kotak kecil di bawah lebih "landscape" bentuknya */
+                grid-template-rows: auto 120px;
+                gap: 10px;
+            }
+
+            /* Gambar 1 (Utama): Atas Full Width */
+            .collage-container > div:nth-child(1) {
+                grid-column: 1 / 3;
+                grid-row: 1 / 2;
+                /* Biarkan tinggi otomatis mengikuti rasio gambar asli, 
+                   tapi batasi maksimal agar tidak memenuhi layar */
+                max-height: 300px; 
+            }
+
+            /* Gambar 2: Bawah Kiri */
+            .collage-container > div:nth-child(2) {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+
+            /* Gambar 3: Bawah Kanan */
+            .collage-container > div:nth-child(3) {
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="body-wrapper">
+        <div id="main-header-container"></div>
+         
+        <section class="project-single padding-tb">
+        <div class="container">
+            <div class="section-wrapper">
+                
+                <div class="project-top">
+                    <div class="row">
+                        <div class="col-lg-12"> 
+                            <div id="image-gallery-container" class="collage-container">
+                                <p>Memuat Gambar...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-bottom">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="project-item">
+                                <div class="project-inner">
+                                    <div class="project-header">
+                                        <img src="assets/images/project/single/icon/01.png" alt="project-icon">
+                                        <h4>Informasi Unit</h4>
+                                    </div>
+                                    <div class="project-body">
+                                        <ul>
+                                            <li>
+                                                <div class="p-thumb"><img src="assets/images/project/single/icon/02.png" alt="project-icon"></div>
+                                                <div class="p-content">
+                                                    <h6>Target Pasar</h6>
+                                                    <p id="unit-client">Loading...</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="p-thumb"><img src="assets/images/project/single/icon/03.png" alt="project-icon"></div>
+                                                <div class="p-content">
+                                                    <h6>Berdiri Sejak</h6>
+                                                    <p id="unit-date">Loading...</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="p-thumb"><img src="assets/images/project/single/icon/04.png" alt="project-icon"></div>
+                                                <div class="p-content">
+                                                    <h6>Kategori</h6>
+                                                    <p id="unit-category">Loading...</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="p-thumb"><img src="assets/images/project/single/icon/05.png" alt="project-icon"></div>
+                                                <div class="p-content">
+                                                    <h6>Lokasi</h6>
+                                                    <p id="unit-location">Loading...</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 right-side">
+                            <div class="project-item">
+                                <div class="project-inner">
+                                    <div class="project-header">
+                                        <img src="assets/images/project/single/icon/06.png" alt="project-icon">
+                                        <h4 id="unit-title">Loading...</h4>
+                                    </div>
+                                    <div class="project-body">
+                                        <h5 id="unit-subtitle" style="margin-bottom: 20px; color: #84e18a;"></h5>
+                                        <div id="unit-description">
+                                            <p>Memuat data unit bisnis...</p>
+                                        </div>
+                                        <a href="contact-us.html" class="custom-btn">Hubungi Kami <i class="fas fa-comment"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="main-footer-container"></div>
+    </div>
+
+    <a href="#" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/lightcase.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/progress.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/map-custom.js"></script>
+    <script src='assets/js/slick.min.js'></script>
+    <script src="assets/js/theia-sticky-sidebar.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/header-menu.js"></script>
+    <script src="assets/js/footer-section.js"></script>
+    
+    <script src="assets/js/unit-desa.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const params = new URLSearchParams(window.location.search);
+            const unitId = params.get('id'); 
+            const data = unitsData[unitId];
+
+            if (data) {
+                // 1. Isi Data Teks
+                document.getElementById("unit-title").textContent = data.title;
+                document.getElementById("unit-subtitle").textContent = data.subtitle; // Tambahan jika ada subtitle di HTML
+                document.getElementById("unit-category").textContent = data.category;
+                document.getElementById("unit-client").textContent = data.client;
+                document.getElementById("unit-date").textContent = data.date;
+                document.getElementById("unit-location").textContent = data.location;
+                document.getElementById("unit-description").innerHTML = data.description;
+                document.title = data.title + " - BUMDES Sangga Emas";
+
+                // 2. Logic Kolase Gambar
+                const galleryContainer = document.getElementById("image-gallery-container");
+                galleryContainer.innerHTML = ""; // Bersihkan loading
+
+                // Cek apakah data menggunakan array 'images' atau string 'image' lama
+                let imagesArray = [];
+                if (data.images && Array.isArray(data.images)) {
+                    imagesArray = data.images;
+                } else if (data.image) {
+                    // Fallback jika lupa update unit-desa.js, pakai 1 gambar diulang 3x biar layout tidak rusak
+                    imagesArray = [data.image, data.image, data.image];
+                }
+
+                // Render HTML Kolase
+                // Gambar 1 (Utama - Kiri Besar)
+                if (imagesArray[0]) {
+                    galleryContainer.innerHTML += `
+                        <div class="collage-item main">
+                            <a href="${imagesArray[0]}" data-rel="lightcase:myCollection">
+                                <img src="${imagesArray[0]}" alt="${data.title} Main">
+                            </a>
+                        </div>
+                    `;
+                }
+
+                // Gambar 2 (Kanan Atas)
+                if (imagesArray[1]) {
+                    galleryContainer.innerHTML += `
+                        <div class="collage-item side">
+                            <a href="${imagesArray[1]}" data-rel="lightcase:myCollection">
+                                <img src="${imagesArray[1]}" alt="${data.title} Side 1">
+                            </a>
+                        </div>
+                    `;
+                }
+
+                // Gambar 3 (Kanan Bawah)
+                if (imagesArray[2]) {
+                    galleryContainer.innerHTML += `
+                        <div class="collage-item side">
+                            <a href="${imagesArray[2]}" data-rel="lightcase:myCollection">
+                                <img src="${imagesArray[2]}" alt="${data.title} Side 2">
+                            </a>
+                        </div>
+                    `;
+                }
+
+                // Jika library Lightcase perlu di-init ulang (opsional, tergantung template)
+                if(typeof jQuery !== 'undefined') {
+                    jQuery('a[data-rel^=lightcase]').lightcase();
+                }
+
+            } else {
+                document.getElementById("unit-title").textContent = "Unit Tidak Ditemukan";
+                document.getElementById("image-gallery-container").style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
