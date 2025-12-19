@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             <div class="footer-logo">
                                 <a href="index.html"><img src="assets/images/logo/logo_bumdes.png" alt="footer-logo"></a>
                             </div>
-                            <p>BUM Desa Sugeng Abadi Mulur berdedikasi untuk membangun ekonomi desa melalui inovasi dan unit bisnis yang berkelanjutan untuk kesejahteraan warga.</p>
+                            <p>BUM Desa Sangga Emas Cikaso berdedikasi untuk membangun ekonomi desa melalui inovasi dan unit bisnis yang berkelanjutan untuk kesejahteraan warga.</p>
                             <a href="about.html" class="custom-btn">Baca Selengkapnya <i class="fas fa-angle-double-right"></i></a>
                         </div>
                     </div>
@@ -52,24 +52,22 @@ document.addEventListener("DOMContentLoaded", function() {
                             <ul>
                                 <li class="post-item">
                                     <div class="post-thumb">
-                                        <a href="#"><img src="assets/images/footer/blog/01.jpg" alt="footer"></a>
+                                        <a href="#"><img src="assets/images/banner/bg_sawahlope.png" alt="footer"></a>
                                     </div>
                                     <div class="post-content">
                                         <h6>
-                                            <a href="#">Kegiatan Bank Sampah Minggu Ini</a>
+                                            <a href="#">Sawah Lope sebagai tepat wisata baru</a>
                                         </h6>
-                                        <p>20 Desember 2025</p>
                                     </div>
                                 </li>
                                 <li class="post-item">
                                     <div class="post-thumb">
-                                        <a href="#"><img src="assets/images/footer/blog/02.jpg" alt="footer"></a>
+                                        <a href="#"><img src="assets/images/project/unit_panagaran3.jpg" alt="footer"></a>
                                     </div>
                                     <div class="post-content">
                                         <h6>
-                                            <a href="#">Peresmian Unit Usaha Baru</a>
+                                            <a href="#">Bukit Panagaran sebagai Camping Ground baru</a>
                                         </h6>
-                                        <p>15 Desember 2025</p>
                                     </div>
                                 </li>
                             </ul>
@@ -121,20 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="left">
                         <span>&copy; 2025 <a href="index.html">COMDEV PRASETIYA MULYA KDE001</a>. All Rights Reserved.</span>
                     </div>
-                    <ul class="right">
-                        <li>
-                            <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <span>Facebook</span>
-                        </li>
-                        <li>
-                            <a class="twitter" href="#"><i class="fab fa-instagram"></i></a>
-                            <span>Instagram</span>
-                        </li>
-                        <li>
-                            <a class="linkedin" href="#"><i class="fab fa-whatsapp"></i></a>
-                            <span>WhatsApp</span>
-                        </li>
-                    </ul>
+
                 </div>
             </div>
         </div>

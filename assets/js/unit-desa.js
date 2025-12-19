@@ -2,22 +2,54 @@
 
 const unitsData = {
     "bukit-panagaran": {
-        title: "Wisata Alam Bukit Panagaran",
-        subtitle: "Menikmati Pesona Keindahan Desa dari Ketinggian",
-        category: "Pariwisata",
-        client: "Wisatawan Umum",
-        date: "Sejak 2023",
-        location: "Bukit Panagaran, Desa Cikaso",
-        images: [
-            "assets/images/project/unit_panagaran3.jpg", // Utama
-            "assets/images/project/unit_panagaran2.jpg", // Samping 1
-            "assets/images/project/unit_panagaran7.jpg"  // Samping 2
-        ],
-        description: `
-            <p>Bukit Panagaran menawarkan pemandangan alam yang memukau dari ketinggian Desa Cikaso. Destinasi ini cocok untuk camping, menikmati sunrise, dan fotografi alam.</p>
-            <p>Fasilitas yang tersedia meliputi area parkir, spot foto instagramable, dan area berkemah yang aman dan nyaman.</p>
-        `
-    },
+            title: "Wisata Alam Bukit Panagaran",
+            subtitle: "Camping Ground & Wisata Edukasi Desa Cikaso",
+            category: "Pariwisata",
+            client: "Wisatawan Umum",
+            date: "Sejak 2023",
+            location: "Bukit Panagaran, Desa Cikaso",
+            images: [
+                "assets/images/project/single/01.jpg", 
+                "assets/images/project/single/02.jpg", 
+                "assets/images/project/single/03.jpg"
+            ],
+            description: `
+                <p>Bukit Panagaran menawarkan pemandangan alam yang memukau dari ketinggian Desa Cikaso. Destinasi ini cocok untuk camping, menikmati sunrise, dan fotografi alam.</p>
+                <p>Fasilitas yang tersedia meliputi area parkir, spot foto instagramable, dan area berkemah yang aman dan nyaman. Kami juga menyediakan paket wisata edukasi pertanian dan peternakan domba.</p>
+            `,
+            // [BARU] Data Paket Harga sesuai brosur
+            pricePackages: [
+                {
+                    name: "Paket Teman (Outing)",
+                    price: "Rp100.000",
+                    pax: "Max. 3 Pax",
+                    features: [
+                        "Tiket Camping 1 Malam",
+                        "Kayu Bakar (Api Unggun)",
+                        "Jagung Sosis"
+                    ]
+                },
+                {
+                    name: "Paket Wisata 1",
+                    price: "Rp60.000",
+                    pax: "Max. 3 Pax",
+                    features: [
+                        "Makan Siang (Lunch)",
+                        "Tiket Edukasi Wisata Domba"
+                    ]
+                },
+                {
+                    name: "Paket Wisata 2",
+                    price: "Rp130.000",
+                    pax: "Max. 3 Pax",
+                    features: [
+                        "Tiket Camping 1 Malam",
+                        "Tiket Sawah Lope",
+                        "Tiket Edukasi Wisata Domba"
+                    ]
+                }
+            ]
+        },
     "resto-sawah-lope": {
         title: "Resto Sawah Lope",
         subtitle: "Sensasi Kuliner Lezat dengan Nuansa Alam Pedesaan",

@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-<style>
-        /* === CONTAINER UTAMA === */
+    <style>
+        /* === STYLE KOLASE GAMBAR === */
         .collage-container {
             display: grid;
             width: 100%;
@@ -34,14 +34,14 @@
             overflow: hidden;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            background-color: #f0f0f0; /* Warna dasar jika gambar loading */
+            background-color: #f0f0f0; 
         }
         
         .collage-item img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Tetap cover agar rapi, tapi wadahnya kita sesuaikan */
-            object-position: center; /* Fokus ke tengah gambar */
+            object-fit: cover;
+            object-position: center;
             display: block;
             transition: transform 0.3s ease;
         }
@@ -50,68 +50,99 @@
             transform: scale(1.03);
         }
 
-        /* === TAMPILAN DESKTOP (Layar Besar) === */
+        /* Desktop Collage */
         @media (min-width: 769px) {
             .collage-container {
-                /* Layout: 2 Kolom (Kiri Besar, Kanan Kecil) */
                 grid-template-columns: 2fr 1fr;
-                
-                /* [PERUBAHAN] Tinggi dikurangi dari 250px ke 190px per baris.
-                   Total tinggi kiri: (190+190+15) = 395px.
-                   Ini lebih mendekati rasio 16:9 (Lanskap) agar tidak banyak terpotong. */
                 grid-template-rows: 190px 190px;
             }
-
-            /* Gambar 1 (Utama): Kiri */
-            .collage-container > div:nth-child(1) {
-                grid-column: 1 / 2;
-                grid-row: 1 / 3;
-            }
-
-            /* Gambar 2: Kanan Atas */
-            .collage-container > div:nth-child(2) {
-                grid-column: 2 / 3;
-                grid-row: 1 / 2;
-            }
-
-            /* Gambar 3: Kanan Bawah */
-            .collage-container > div:nth-child(3) {
-                grid-column: 2 / 3;
-                grid-row: 2 / 3;
-            }
+            .collage-container > div:nth-child(1) { grid-column: 1 / 2; grid-row: 1 / 3; }
+            .collage-container > div:nth-child(2) { grid-column: 2 / 3; grid-row: 1 / 2; }
+            .collage-container > div:nth-child(3) { grid-column: 2 / 3; grid-row: 2 / 3; }
         }
 
-        /* === TAMPILAN MOBILE (Layar HP) === */
+        /* Mobile Collage */
         @media (max-width: 768px) {
             .collage-container {
-                grid-template-columns: 1fr 1fr; /* 2 Kolom */
-                
-                /* [PERUBAHAN] Baris bawah dikurangi tingginya jadi 120px 
-                   agar kotak kecil di bawah lebih "landscape" bentuknya */
+                grid-template-columns: 1fr 1fr;
                 grid-template-rows: auto 120px;
                 gap: 10px;
             }
+            .collage-container > div:nth-child(1) { grid-column: 1 / 3; grid-row: 1 / 2; max-height: 300px; }
+            .collage-container > div:nth-child(2) { grid-column: 1 / 2; grid-row: 2 / 3; }
+            .collage-container > div:nth-child(3) { grid-column: 2 / 3; grid-row: 2 / 3; }
+        }
 
-            /* Gambar 1 (Utama): Atas Full Width */
-            .collage-container > div:nth-child(1) {
-                grid-column: 1 / 3;
-                grid-row: 1 / 2;
-                /* Biarkan tinggi otomatis mengikuti rasio gambar asli, 
-                   tapi batasi maksimal agar tidak memenuhi layar */
-                max-height: 300px; 
-            }
-
-            /* Gambar 2: Bawah Kiri */
-            .collage-container > div:nth-child(2) {
-                grid-column: 1 / 2;
-                grid-row: 2 / 3;
-            }
-
-            /* Gambar 3: Bawah Kanan */
-            .collage-container > div:nth-child(3) {
-                grid-column: 2 / 3;
-                grid-row: 2 / 3;
-            }
+        /* === [BARU] STYLE PAKET HARGA (PRICING CARD) === */
+        .pricing-section {
+            margin-top: 40px;
+            display: none; /* Sembunyikan default, muncul via JS kalau ada data */
+        }
+        .pricing-title {
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: #222;
+            border-left: 5px solid #84e18a;
+            padding-left: 15px;
+        }
+        .pricing-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            border-color: #84e18a;
+            box-shadow: 0 8px 25px rgba(132, 225, 138, 0.2);
+        }
+        .pricing-header h5 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .pricing-price {
+            font-size: 28px;
+            font-weight: 900;
+            color: #84e18a;
+            margin-bottom: 5px;
+        }
+        .pricing-pax {
+            font-size: 13px;
+            color: #888;
+            font-style: italic;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .pricing-features li {
+            position: relative;
+            padding-left: 0px;
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 15px;
+            line-height: 1.4;
+        }
+        .top-label {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #84e18a;
+            color: #fff;
+            padding: 5px 15px;
+            font-size: 12px;
+            border-bottom-left-radius: 10px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -133,6 +164,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="project-bottom">
                     <div class="row">
                         <div class="col-lg-4">
@@ -177,6 +209,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-8 right-side">
                             <div class="project-item">
                                 <div class="project-inner">
@@ -189,7 +222,16 @@
                                         <div id="unit-description">
                                             <p>Memuat data unit bisnis...</p>
                                         </div>
-                                        <a href="contact-us.html" class="custom-btn">Hubungi Kami <i class="fas fa-comment"></i></a>
+
+                                        <div id="packages-container" class="pricing-section">
+                                            <h4 class="pricing-title">Pilihan Paket Wisata</h4>
+                                            <div class="row" id="packages-list">
+                                                </div>
+                                        </div>
+                                        <div style="margin-top: 30px;">
+                                            <a href="contact-us.html" class="custom-btn">Hubungi Kami <i class="fas fa-comment"></i></a>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -232,9 +274,9 @@
             const data = unitsData[unitId];
 
             if (data) {
-                // 1. Isi Data Teks
+                // 1. Isi Data Teks Dasar
                 document.getElementById("unit-title").textContent = data.title;
-                document.getElementById("unit-subtitle").textContent = data.subtitle; // Tambahan jika ada subtitle di HTML
+                document.getElementById("unit-subtitle").textContent = data.subtitle || ""; 
                 document.getElementById("unit-category").textContent = data.category;
                 document.getElementById("unit-client").textContent = data.client;
                 document.getElementById("unit-date").textContent = data.date;
@@ -242,54 +284,50 @@
                 document.getElementById("unit-description").innerHTML = data.description;
                 document.title = data.title + " - BUMDES Sangga Emas";
 
-                // 2. Logic Kolase Gambar
+                // 2. Render Kolase Gambar
                 const galleryContainer = document.getElementById("image-gallery-container");
-                galleryContainer.innerHTML = ""; // Bersihkan loading
+                galleryContainer.innerHTML = ""; 
+                let imagesArray = (data.images && Array.isArray(data.images)) ? data.images : (data.image ? [data.image, data.image, data.image] : []);
+                
+                if (imagesArray[0]) galleryContainer.innerHTML += `<div class="collage-item main"><a href="${imagesArray[0]}" data-rel="lightcase:myCollection"><img src="${imagesArray[0]}" alt="Main"></a></div>`;
+                if (imagesArray[1]) galleryContainer.innerHTML += `<div class="collage-item side"><a href="${imagesArray[1]}" data-rel="lightcase:myCollection"><img src="${imagesArray[1]}" alt="Side 1"></a></div>`;
+                if (imagesArray[2]) galleryContainer.innerHTML += `<div class="collage-item side"><a href="${imagesArray[2]}" data-rel="lightcase:myCollection"><img src="${imagesArray[2]}" alt="Side 2"></a></div>`;
 
-                // Cek apakah data menggunakan array 'images' atau string 'image' lama
-                let imagesArray = [];
-                if (data.images && Array.isArray(data.images)) {
-                    imagesArray = data.images;
-                } else if (data.image) {
-                    // Fallback jika lupa update unit-desa.js, pakai 1 gambar diulang 3x biar layout tidak rusak
-                    imagesArray = [data.image, data.image, data.image];
+                // 3. [BARU] Render Paket Harga (Jika Ada)
+                if (data.pricePackages && data.pricePackages.length > 0) {
+                    const pkgContainer = document.getElementById("packages-container");
+                    const pkgList = document.getElementById("packages-list");
+                    
+                    pkgContainer.style.display = "block"; // Munculkan section
+                    pkgList.innerHTML = ""; // Bersihkan
+
+                    data.pricePackages.forEach(pkg => {
+                        // Loop fitur paket (ul li)
+                        let featuresHtml = "";
+                        pkg.features.forEach(feat => {
+                            featuresHtml += `<li>${feat}</li>`;
+                        });
+
+                        // Tambahkan HTML Card ke list
+                        pkgList.innerHTML += `
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <div class="pricing-card">
+                                    <div class="top-label">Paket Hemat</div>
+                                    <div class="pricing-header">
+                                        <h5>${pkg.name}</h5>
+                                        <div class="pricing-price">${pkg.price}</div>
+                                        <span class="pricing-pax">${pkg.pax}</span>
+                                    </div>
+                                    <ul class="pricing-features">
+                                        ${featuresHtml}
+                                    </ul>
+                                </div>
+                            </div>
+                        `;
+                    });
                 }
 
-                // Render HTML Kolase
-                // Gambar 1 (Utama - Kiri Besar)
-                if (imagesArray[0]) {
-                    galleryContainer.innerHTML += `
-                        <div class="collage-item main">
-                            <a href="${imagesArray[0]}" data-rel="lightcase:myCollection">
-                                <img src="${imagesArray[0]}" alt="${data.title} Main">
-                            </a>
-                        </div>
-                    `;
-                }
-
-                // Gambar 2 (Kanan Atas)
-                if (imagesArray[1]) {
-                    galleryContainer.innerHTML += `
-                        <div class="collage-item side">
-                            <a href="${imagesArray[1]}" data-rel="lightcase:myCollection">
-                                <img src="${imagesArray[1]}" alt="${data.title} Side 1">
-                            </a>
-                        </div>
-                    `;
-                }
-
-                // Gambar 3 (Kanan Bawah)
-                if (imagesArray[2]) {
-                    galleryContainer.innerHTML += `
-                        <div class="collage-item side">
-                            <a href="${imagesArray[2]}" data-rel="lightcase:myCollection">
-                                <img src="${imagesArray[2]}" alt="${data.title} Side 2">
-                            </a>
-                        </div>
-                    `;
-                }
-
-                // Jika library Lightcase perlu di-init ulang (opsional, tergantung template)
+                // Init Plugin Lightcase
                 if(typeof jQuery !== 'undefined') {
                     jQuery('a[data-rel^=lightcase]').lightcase();
                 }

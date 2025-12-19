@@ -19,16 +19,48 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Custom CSS agar tampilan kontak lebih rapi & terpusat */
+        .contact-info-box {
+            background: #fff;
+            padding: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            text-align: center;
+            height: 100%;
+            transition: transform 0.3s;
+            border-bottom: 4px solid #84e18a; /* Aksen Hijau BUMDes */
+        }
+        .contact-info-box:hover {
+            transform: translateY(-5px);
+        }
+        .contact-icon {
+            font-size: 40px;
+            color: #84e18a; /* Sesuaikan dengan warna tema */
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .contact-details h5 {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .contact-details p, .contact-details a {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        /* Perbaikan tampilan Peta */
+        .gmaps iframe {
+            filter: grayscale(0%); /* Ubah jadi 100% kalau mau hitam putih */
+            border-top: 5px solid #84e18a;
+        }
+    </style>
 </head>
 <body>
 
     <div class="body-wrapper">
-        <!-- mobile menu start -->
         <div id="main-header-container"></div>
-        <!-- header section ending -->
-
-
-        <!-- page header section start here -->
         <section class="page-header">
             <div class="page-header-area">
                 <div class="container">
@@ -37,123 +69,80 @@
                             <h2>Kontak Kami</h2>
                         </div>
                         <ul class="breadcamp">
-                            <li><a href="#"><i class="fas fa-home"></i> Beranda</a></li>
+                            <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
                             <li><a class="active">Kontak Kami</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- page header section ending here -->
-
-
-        <!-- contact us section start here -->
         <section class="contact-us padding-tb">
             <div class="container">
-                <div class="row no-gutters section-wrapper">
-                    <div class="col-lg-6">
-                        <div class="row no-gutters">
-                            <div class="col-sm-6">
-                                <div class="main-addres">
-                                    <div class="contact-title">
-                                        <h4>Main Office Address</h4>
-                                    </div>
-                                    <div class="contact-body">
-                                        <ul>
-                                            <li>
-                                                <h6>Location :</h6>
-                                                <p>Suite 02, Level 12 Tropical Center 88 Broklyn, New York </p>
-                                            </li>
-                                            <li>
-                                                <h6>Phone Number :</h6>
-                                                <p>+258 666 888 000, 02- 698147</p>
-                                            </li>
-                                            <li>
-                                                <h6>Email Address :</h6>
-                                                <a href="#">Support@adminenvishare.com</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                <div class="section-wrapper">
+                    <div class="row justify-content-center">
+                        
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="contact-info-box">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="rounch-addres">
-                                    <div class="contact-title">
-                                        <h4>Our Branch Offices</h4>
-                                    </div>
-                                    <div class="contact-body">
-                                        <ul>
-                                            <li>
-                                                <h5>United Kingdom</h5>
-                                            </li>
-                                            <li>
-                                                <h6>Location :</h6>
-                                                <p>Level 12 Alfa City Center 120 Broklyn New York </p>
-                                            </li>
-                                            <li>
-                                                <h6>Phone Number :</h6>
-                                                <p>+258 666 888 000, 02- 698147</p>
-                                            </li>
-                                            <li>
-                                                <h6>Email Address :</h6>
-                                                <a href="#">Support@adminenvishare.com</a>
-                                            </li>
-                                        </ul>
-                                        <ul>
-                                            <li>
-                                                <h5>United States</h5>
-                                            </li>
-                                            <li>
-                                                <h6>Location :</h6>
-                                                <p>Level 12 Alfa City Center 120 Broklyn New York </p>
-                                            </li>
-                                            <li>
-                                                <h6>Phone Number :</h6>
-                                                <p>+258 666 888 000, 02- 698147</p>
-                                            </li>
-                                            <li>
-                                                <h6>Email Address :</h6>
-                                                <a href="#">bumdessanggaemas@gmail.com</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <div class="contact-details">
+                                    <h5>Alamat Kantor</h5>
+                                    <p>Jl. Cikaso No.702, Desa Cikaso,<br>Kec. Kramatmulya, Kab. Kuningan,<br>Jawa Barat 45553</p>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="contact-info-box">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-volume"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Telepon / WhatsApp</h5>
+                                    <p>Hubungi kami di:</p>
+                                    <a href="https://wa.me/6288239374328" target="_blank" style="font-weight: bold; font-size: 18px;">
+                                        +62 882-3937-4328
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="contact-info-box">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope-open-text"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Email Resmi</h5>
+                                    <p>Kirim pesan ke:</p>
+                                    <a href="mailto:sanggaemasbumdes@gmail.com" style="font-weight: bold;">
+                                        sanggaemasbumdes@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
-        <!-- contact us section ending here -->
-
-
-        <!-- gmap section start here -->
         <div class="gmaps">
             <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15849.26786885376!2d108.4862525!3d-6.8872588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f16c70258079d%3A0x644265507954932d!2sCikaso%2C%20Kec.%20Kramatmulya%2C%20Kabupaten%20Kuningan%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
                 width="100%" 
                 height="450" 
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://maps.google.com/maps?q=Balai+Desa+Cikaso+Kramatmulya+Kuningan&t=&z=17&ie=UTF8&iwloc=&output=embed">
+                referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
-        <!-- gmap section ending here -->
-
-        
-
-        <!-- footer section start here -->
         <div id="main-footer-container"></div>
-        <!-- footer section end here -->
-    </div>
+        </div>
 
 
-    <!-- scroll to top -->
     <a href="#" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
-    <!-- scroll to top -->
-
-
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -169,8 +158,8 @@
     <script src='assets/js/slick.min.js'></script>
     <script src="assets/js/theia-sticky-sidebar.js"></script>
     <script src="assets/js/functions.js"></script>
-    <script src="assets/js/footer-section.js"></script>
     <script src="assets/js/header-menu.js"></script>
+    <script src="assets/js/footer-section.js"></script>
 
 </body>
 </html>
