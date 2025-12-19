@@ -36,12 +36,12 @@ document.addEventListener("DOMContentLoaded", function() {
                             <ul class="m-submenu">
                                 <li><a href="project.html">Semua Unit</a></li>
                                 <li><a href="project-single.html?id=bukit-panagaran">Bukit Panagaran</a></li>
-                                <li><a href="project-single.html?id=resto-sawah-lope">Resto Sawah Lope</a></li>
+                                <li><a href="project-single.html?id=resto-sawah-lope">Resto Saung Manis</a></li>
                                 <li><a href="project-single.html?id=sawah-lope">Sawah Lope</a></li>
                                 <li><a href="project-single.html?id=penggilingan-padi">Penggilingan Padi</a></li>
                                 <li><a href="project-single.html?id=kolam-renang">Kolam Renang Cimalati</a></li>
-                                <li><a href="project-single.html?id=lumbung-pangan">Lumbung Pangan</a></li>
-                                <li><a href="project-single.html?id=bri-link">BRI Link</a></li>
+                                <li><a href="project-single.html?id=lumbung-pangan">Kedai Sebalak Cimalati</a></li>
+                                <li><a href="project-single.html?id=bri-link">Jasa Pengangkutan Sampah</a></li>
                                 <li><a href="project-single.html?id=bawang-goreng">Bawang Goreng "Sang Lobang"</a></li>
                                 <li><a href="project-single.html?id=penyewaan-kios">Penyewaan Kios</a></li>                            
                             </ul>
@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         <li>Email : sanggaemasbumdes@gmail.com</li>
                     </ul>
                     <ul class="right">
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
                     </ul>
@@ -81,20 +80,19 @@ document.addEventListener("DOMContentLoaded", function() {
                             <li><a href="development.html">Potensi Desa</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog.html">Kabar Kami</a></li>
                     <li>
                         <a href="project.html">Unit Bisnis</a>
                         <ul>
                             <li><a href="project.html">Semua Unit</a></li>
                             <li><a href="project-single.html?id=bukit-panagaran">Bukit Panagaran</a></li>
-                            <li><a href="project-single.html?id=resto-sawah-lope">Resto Sawah Lope</a></li>
+                            <li><a href="project-single.html?id=resto-sawah-lope">Resto Saung Manis</a></li>
                             <li><a href="project-single.html?id=sawah-lope">Sawah Lope</a></li>
                             <li><a href="project-single.html?id=penggilingan-padi">Penggilingan Padi</a></li>
                             <li><a href="project-single.html?id=kolam-renang">Kolam Renang Cimalati</a></li>
-                            <li><a href="project-single.html?id=lumbung-pangan">Lumbung Pangan</a></li>
-                            <li><a href="project-single.html?id=bri-link">BRI Link</a></li>
+                            <li><a href="project-single.html?id=lumbung-pangan">Kedai Sebalak Cimalati</a></li>
+                            <li><a href="project-single.html?id=bri-link">Jasa Pengangkutan Sampah</a></li>
                             <li><a href="project-single.html?id=bawang-goreng">Bawang Goreng "Sang Lobang"</a></li>
-                            <li><a href="project-single.html?id=penyewaan-kios">Penyewaan Kios</a></li>
+                            <li><a href="project-single.html?id=penyewaan-kios">Penyewaan Kios</a></li>  
                         </ul>
                     </li>
                     <li><a href="contact-us.html">Kontak Kami</a></li>
