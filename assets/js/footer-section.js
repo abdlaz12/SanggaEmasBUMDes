@@ -81,32 +81,32 @@ document.addEventListener("DOMContentLoaded", function() {
                             <ul class="footer-gallery">
                                 <li>
                                     <div class="post-thumb">
-                                        <a href="#"><img src="assets/images/footer/gallery/01.jpg" alt="footer-gallery"></a>
+                                        <a href="#"><img src="assets/images/banner/bg_bawang_goreng.png" alt="footer-gallery"></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="post-thumb">
-                                        <a href="#"><img src="assets/images/footer/gallery/02.jpg" alt="footer-gallery"></a>
+                                        <a href="#"><img src="assets/images/banner/bg_kolam_cimalati" alt="footer-gallery"></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="post-thumb">
-                                        <a href="#"><img src="assets/images/footer/gallery/03.jpg" alt="footer-gallery"></a>
+                                        <a href="#"><img src="assets/images/project/KKN1.jpeg" alt="footer-gallery"></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="post-thumb">
-                                        <a href="#"><img src="assets/images/footer/gallery/04.jpg" alt="footer-gallery"></a>
+                                        <a href="#"><img src="assets/images/project/unit_DLH.jpeg" alt="footer-gallery"></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="post-thumb">
-                                        <a href="#"><img src="assets/images/footer/gallery/05.jpg" alt="footer-gallery"></a>
+                                        <a href="#"><img src="assets/images/project/unit_padi1.jpeg" alt="footer-gallery"></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="post-thumb">
-                                        <a href="#"><img src="assets/images/footer/gallery/06.jpg" alt="footer-gallery"></a>
+                                        <a href="#"><img src="assets/images/project/unit_resto1.jpeg" alt="footer-gallery"></a>
                                     </div>
                                 </li>
                             </ul>
