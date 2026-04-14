@@ -9,9 +9,9 @@ const unitsData = {
             date: "Sejak 2023",
             location: "Bukit Panagaran, Desa Cikaso",
             images: [
-                "assets/images/project/single/01.jpg", 
-                "assets/images/project/single/02.jpg", 
-                "assets/images/project/single/03.jpg"
+                "assets/images/project/unit_panagaran3.jpg", 
+                "assets/images/project/unit_panagaran6.jpg", 
+                "assets/images/project/unit_panagaran7.jpg"
             ],
             description: `
                 <p>Bukit Panagaran menawarkan pemandangan alam yang memukau dari ketinggian Desa Cikaso. Destinasi ini cocok untuk camping, menikmati sunrise, dan fotografi alam.</p>
@@ -76,7 +76,7 @@ const unitsData = {
         location: "Dusun II, Desa Cikaso",
         images: [
             "assets/images/project/unit_sawah6.png", // Utama
-            "assets/images/project/unit_sawah5.jpeg.jpg", // Samping 1
+            "assets/images/project/unit_sawah5.jpeg", // Samping 1
             "assets/images/project/unit_sawah3.jpeg"  // Samping 2
         ],
         description: `
@@ -111,8 +111,8 @@ const unitsData = {
         location: "Kawasan Cimalati",
         images: [
             "assets/images/project/unit_kolam1.png", // Utama
-            "assets/images/project/02.jpg", // Samping 1
-            "assets/images/project/03.jpg"  // Samping 2
+            "assets/images/project/unit_kedai1.jpeg", // Samping 1
+            "assets/images/project/unit_kedai3.jpeg"  // Samping 2
 
         ],
         description: `
@@ -128,9 +128,9 @@ const unitsData = {
         date: "Sejak 2020",
         location: "Gudang BUMDes",
         images: [
-            "assets/images/project/01.jpg", // Utama
-            "assets/images/project/02.jpg", // Samping 1
-            "assets/images/project/03.jpg"  // Samping 2
+            "assets/images/project/unit_padi3.jpeg", // Utama
+            "assets/images/project/unit_padi4.jpeg", // Samping 1
+            "assets/images/project/unit_padi9.jpeg"  // Samping 2
 
         ],
         description: `
@@ -145,9 +145,9 @@ const unitsData = {
         date: "Sejak 2022",
         location: "Kantor BUMDes",
         images: [
-            "assets/images/project/01.jpg", // Utama
-            "assets/images/project/02.jpg", // Samping 1
-            "assets/images/project/03.jpg"  // Samping 2
+            "assets/images/project/unit_ruko1.jpeg", // Utama
+            "assets/images/project/unit_ruko1.jpeg", // Samping 1
+            "assets/images/project/unit_ruko1.jpeg"  // Samping 2
 
         ],
         description: `
@@ -162,9 +162,9 @@ const unitsData = {
         date: "Sejak 2023",
         location: "Rumah Produksi UMKM",
         images: [
-            "assets/images/project/01.jpg", // Utama
-            "assets/images/project/02.jpg", // Samping 1
-            "assets/images/project/03.jpg"  // Samping 2
+            "assets/images/banner/bg_bawang_goreng.png", // Utama
+            "assets/images/banner/bg_bawang_goreng.png", // Samping 1
+            "assets/images/banner/bg_bawang_goreng.png"  // Samping 2
 
         ],
         description: `
