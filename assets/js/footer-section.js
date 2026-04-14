@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         </div>
                         <div class="post-content">
                             <h6>Kirim Pesan</h6>
-                            <p>admin@bumdesamulur.id</p>
+                            <p>sanggaemasbumdes@gmail.com</p>
                         </div>
                     </div>
                     <div class="post-item">
@@ -31,7 +31,9 @@ document.addEventListener("DOMContentLoaded", function() {
                         </div>
                         <div class="post-content">
                             <h6>Lokasi Kami</h6>
-                            <p>Desa Mulur, Bendosari, Sukoharjo</p>
+                            <p>Jl. Cikaso No.702, Desa Cikaso,
+                                Kec. Kramatmulya, Kab. Kuningan,
+                                Jawa Barat 45553</p>
                         </div>
                     </div>
                 </div>
