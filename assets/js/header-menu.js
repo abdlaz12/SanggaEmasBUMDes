@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", function() {
                             <li><a href="project-single.html?id=sawah-lope">Sawah Lope</a></li>
                             <li><a href="project-single.html?id=penggilingan-padi">Penggilingan Padi</a></li>
                             <li><a href="project-single.html?id=kolam-renang">Kolam Renang Cimalati</a></li>
-                            <li><a href="project-single.html?id=lumbung-pangan">Kedai Sebalak Cimalati</a></li>
                             <li><a href="project-single.html?id=bri-link">Jasa Pengangkutan Sampah</a></li>
                             <li><a href="project-single.html?id=bawang-goreng">Bawang Goreng "Sang Lobang"</a></li>
                             <li><a href="project-single.html?id=penyewaan-kios">Penyewaan Kios</a></li>  

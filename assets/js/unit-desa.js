@@ -138,16 +138,16 @@ const unitsData = {
         `
     },
     "bri-link": {
-        title: "Agen BRILink BUMDes",
-        subtitle: "Transaksi Keuangan Jadi Lebih Dekat dan Mudah",
-        category: "Jasa Keuangan",
-        client: "Nasabah Bank",
+        title: "Jasa Pengangkutan Sampah",
+        subtitle: "DLH Milik Desa untuk membantu warga dalam pengangkutan sampah agar sistem lebih terjaga dan lingkungan bersih dan nyaman",
+        category: "Pengangkutan Sampah",
+        client: "Warga Cikaso",
         date: "Sejak 2022",
         location: "Kantor BUMDes",
         images: [
-            "assets/images/project/unit_ruko1.jpeg", // Utama
-            "assets/images/project/unit_ruko1.jpeg", // Samping 1
-            "assets/images/project/unit_ruko1.jpeg"  // Samping 2
+            "assets/images/project/unit_DLH1.jpeg", // Utama
+            "assets/images/project/unit_DLH2.jpeg", // Samping 1
+            "assets/images/project/unit_DLH3.jpeg"  // Samping 2
 
         ],
         description: `

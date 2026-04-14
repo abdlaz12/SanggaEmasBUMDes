@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <div class="col-4 p-1"><img src="assets/images/banner/bg_bawang_goreng.png" class="img-fluid rounded" style="aspect-ratio: 1/1; object-fit: cover;" alt="Galeri"></div>
                                 <div class="col-4 p-1"><img src="assets/images/banner/bg_kolam_cimalati.png" class="img-fluid rounded" style="aspect-ratio: 1/1; object-fit: cover;" alt="Galeri"></div>
                                 <div class="col-4 p-1"><img src="assets/images/project/KKN2.jpeg" class="img-fluid rounded" style="aspect-ratio: 1/1; object-fit: cover;" alt="Galeri"></div>
-                                <div class="col-4 p-1"><img src="assets/images/project/unit_DLH.jpeg" class="img-fluid rounded" style="aspect-ratio: 1/1; object-fit: cover;" alt="Galeri"></div>
+                                <div class="col-4 p-1"><img src="assets/images/project/unit_DLH1.jpeg" class="img-fluid rounded" style="aspect-ratio: 1/1; object-fit: cover;" alt="Galeri"></div>
                                 <div class="col-4 p-1"><img src="assets/images/project/unit_padi1.jpeg" class="img-fluid rounded" style="aspect-ratio: 1/1; object-fit: cover;" alt="Galeri"></div>
                                 <div class="col-4 p-1"><img src="assets/images/project/unit_resto1.jpeg" class="img-fluid rounded" style="aspect-ratio: 1/1; object-fit: cover;" alt="Galeri"></div>
                             </div>
