@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         </div>
                         <div class="post-content">
                             <h6>Kirim Pesan</h6>
-                            <p>sanggaemasbumdes@gmail.com</p>
+                            <p>sanggaemasbumdes@gmail</p>
                         </div>
                     </div>
                     <div class="post-item">
@@ -86,12 +86,12 @@ document.addEventListener("DOMContentLoaded", function() {
                                 </li>
                                 <li>
                                     <div class="post-thumb">
-                                        <a href="#"><img src="assets/images/banner/bg_kolam_cimalati" alt="footer-gallery"></a>
+                                        <a href="#"><img src="assets/images/banner/bg_kolam_cimalati.png" alt="footer-gallery"></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="post-thumb">
-                                        <a href="#"><img src="assets/images/project/KKN1.jpeg" alt="footer-gallery"></a>
+                                        <a href="#"><img src="assets/images/project/KKN2.jpeg" alt="footer-gallery"></a>
                                     </div>
                                 </li>
                                 <li>
