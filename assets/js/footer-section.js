@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 </li>
                                 <li>
                                     <div class="post-thumb">
-                                        <a href="#"><img src="assets/images/banner/bg_kolam_cimalati.png" alt="footer-gallery"></a>
+                                        <a href="#"><img src="assets/images/banner/bg_kolam_cimalati.png" alt="footer-kolam"></a>
                                     </div>
                                 </li>
                                 <li>
